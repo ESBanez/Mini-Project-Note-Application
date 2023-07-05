@@ -42,6 +42,7 @@ html {
     align-items: center;
     padding: 20px;
     overflow-x: hidden;
+    border: 0 3rem 0 3rem;
   }
   
   header {
