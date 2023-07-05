@@ -1,0 +1,201 @@
+
+html {
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+/*****************************Phone Media Responsiveness*******************************/
+
+@media screen and (max-width: 480px) {
+  header>img {
+    height: auto;
+    width: 70%;
+  }
+
+  @keyframes headerAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: headerAnimation 3s ease-in-out infinite;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-row,
+  .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap value as desired */
+  }
+  
+  .middle-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  
+  .content-image:hover {
+    transform: scale(1.2);
+  }
+}
+
+/***************************** laptop*******************************/
+
+@media screen and (min-width: 750px){
+ header>img {
+    height: auto;
+    width: 70%;
+  }
+  
+  @keyframes headerAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: headerAnimation 3s ease-in-out infinite;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap value as desired */
+  }
+  
+  .content-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  
+  .content-image:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+
+/*****************************laptop*******************************/
+body {
+  background-image: url(./multimedia/background.png);
+
+}
+
+.sticky-notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sticky-note {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-note-content {
+  height: 100%;
+}
+
+.sticky-note-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  color: red;
+  cursor: pointer;
+}
+
+.sticky-notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align sticky notes to the top */
+  margin-top: 20px;
+}
+
+.sticky-note {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0; /* Prevent sticky notes from shrinking */
+}
